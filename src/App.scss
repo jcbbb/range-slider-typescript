@@ -1,0 +1,49 @@
+.range {
+    max-width: 60%;
+    margin: 20% auto;
+    position: relative;
+    &__track-background {
+        background: lightgray;
+        border-radius: 9999px;
+        position: relative;
+        height: 20px;
+    }
+    &__track {
+        background: pink;
+        width: 10%;
+        height: 100%;
+        border-radius: 9999px;
+        position: absolute;
+        cursor: pointer;
+    }
+    &__label {
+        position: absolute;
+        top: -30px;
+    }
+    &__label--min {
+        left: 0;
+    }
+    &__label--max {
+        right: 0;
+    }
+    &__thumb {
+        background: green;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: absolute;
+        cursor: pointer;
+        top: 50%;
+        transform: translateY(-50%);
+        &--max {
+            transform: translate(-100%, -50%);
+        }
+    }
+    &__thumb-label {
+        position: absolute;
+        bottom: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
